@@ -1,7 +1,9 @@
-﻿$ServerInfo = @(
+﻿
+$ServerInfo = @(
                     [PSCustomObject]@{
                                         ServerName = "MGMT01"
                                         MaintenanceModeActive = "False"
+                                        SMS_Alerting = @("+45 21321321")
                                         Monitoring_WindowsServices = @(
                                                                         [PSCustomObject]@{
                                                                                             Type = "WindowsServices"
@@ -12,6 +14,7 @@
                     [PSCustomObject]@{
                                         ServerName = "MGMT02"
                                         MaintenanceModeActive = "True"
+                                        SMS_Alerting = @("+45 21321321")
                                         Monitoring_WindowsServices = @(
                                                                         [PSCustomObject]@{
                                                                                             Type = "WindowsServices"
