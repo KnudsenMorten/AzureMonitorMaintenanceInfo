@@ -1,11 +1,11 @@
 ﻿$ServerInfo = @(
                     [PSCustomObject]@{
-                                        ServerName = "MGMT01"
+                                        Computer = "MGMT01"
                                         MaintenanceModeActive = "False"
                                         Monitoring_WindowsServices = @(
                                                                         [PSCustomObject]@{
                                                                                             Type = "WindowsServices"
-                                                                                            ServiceDisplayNameContains = @("Kiwi","WindowsUpdate")
+                                                                                            ServiceName = @("Kiwi","WindowsUpdate")
                                                                                          }
                                                                       )
                                      }
@@ -15,10 +15,10 @@
                                         Monitoring_WindowsServices = @(
                                                                         [PSCustomObject]@{
                                                                                             Type = "WindowsServices"
-                                                                                            ServiceDisplayNameContains = @("WindowsUpdate")
+                                                                                            ServiceName = @("WindowsUpdate")
                                                                                          }
                                                                       )
                                      }
                )
-
-$JSON = $ServerInfo | ConvertTo-Json -Depth 20 | out-file "C:\Users\mok\OneDrive - 2linkIT\Documents\GitHub\PowershellKnownMitigationsLib\ServerMonitoring.json" -Encoding utf8 -Force
+$FileOutPut = $Env:OneDrive + "\Documents\GitHub\" + "AzureMonitorMaintenanceInfo" + "\" + "ServerMonitoring.json"
+$JSON = $ServerInfo | ConvertTo-Json -Depth 20 | out-file $FileOutPut -Encoding utf8 -Force
