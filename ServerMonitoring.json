@@ -6,7 +6,7 @@
                                            {
                                                "Type":  "WindowsServices",
                                                "ServiceName":  [
-                                                                   "Kiwi",
+                                                                   "Kiwi Syslog Server",
                                                                    "WindowsUpdate"
                                                                ]
                                            }
