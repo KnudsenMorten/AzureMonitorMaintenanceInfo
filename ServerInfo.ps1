@@ -5,7 +5,7 @@
                                         Monitoring_WindowsServices = @(
                                                                         [PSCustomObject]@{
                                                                                             Type = "WindowsServices"
-                                                                                            ServiceName = @("Kiwi Syslog Server","WindowsUpdate")
+                                                                                            ServiceName = @("Kiwi Syslog Server","AutoAssessPatchService","HealthService")
                                                                                          }
                                                                       )
                                      }
@@ -15,7 +15,7 @@
                                         Monitoring_WindowsServices = @(
                                                                         [PSCustomObject]@{
                                                                                             Type = "WindowsServices"
-                                                                                            ServiceName = @("WindowsUpdate")
+                                                                                            ServiceName = @("AutoAssessPatchService","Spooler")
                                                                                          }
                                                                       )
                                      }
