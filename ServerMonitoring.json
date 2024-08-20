@@ -1,0 +1,27 @@
+﻿[
+    {
+        "ServerName":  "MGMT01",
+        "MaintenanceModeActive":  "False",
+        "Monitoring_WindowsServices":  [
+                                           {
+                                               "Type":  "WindowsServices",
+                                               "ServiceDisplayNameContains":  [
+                                                                                  "Kiwi",
+                                                                                  "WindowsUpdate"
+                                                                              ]
+                                           }
+                                       ]
+    },
+    {
+        "ServerName":  "MGMT02",
+        "MaintenanceModeActive":  "True",
+        "Monitoring_WindowsServices":  [
+                                           {
+                                               "Type":  "WindowsServices",
+                                               "ServiceDisplayNameContains":  [
+                                                                                  "WindowsUpdate"
+                                                                              ]
+                                           }
+                                       ]
+    }
+]
