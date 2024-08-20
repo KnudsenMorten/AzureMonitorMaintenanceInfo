@@ -1,6 +1,6 @@
 ﻿[
     {
-        "Computer":  "MGMT01",
+        "ServerName":  "MGMT01",
         "MaintenanceModeActive":  "False",
         "Monitoring_WindowsServices":  [
                                            {
